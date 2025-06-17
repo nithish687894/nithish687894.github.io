@@ -1,114 +1,56 @@
-/* === GENERAL === */
-body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  background: #010101;
-  color: #ddd;
-  scroll-behavior: smooth;
+/* === DISCLAIMER BANNER === */
+.disclaimer {
+  background: #f00;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
 }
 
-h1, h2 {
-  font-family: 'Orbitron', sans-serif;
-}
-
-a {
-  color: #0ff;
-  text-decoration: none;
-}
-
-a:hover {
+.disclaimer a {
+  color: #fff;
   text-decoration: underline;
-  text-shadow: 0 0 8px #0ff;
 }
 
-/* === HEADER === */
+/* === STICKY NAV === */
 header {
-  background: #000;
-  padding: 30px 20px;
-  text-align: center;
-  border-bottom: 1px solid #0ff5;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
-header h1 {
-  margin: 0;
-  color: #0ff;
-  font-size: 2em;
-}
-
-nav {
-  margin-top: 15px;
-}
-
-nav a {
-  margin: 0 10px;
-  font-weight: 500;
-}
-
-/* === HERO === */
-.hero {
-  background: radial-gradient(circle at center, #0ff2 0%, #000 100%);
-  text-align: center;
-  padding: 120px 20px;
-}
-
-.hero h2 {
-  font-size: 2.5em;
-}
-
-.hero span {
-  color: #0ff;
-}
-
-.hero p {
-  font-size: 1.2em;
-}
-
-/* === GLASS SECTIONS === */
-.glass {
-  max-width: 1000px;
-  margin: 60px auto;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(8px);
-  border: 1px solid #0ff2;
-  border-radius: 12px;
-  padding: 50px 30px;
-  box-shadow: 0 8px 40px #0ff2;
-}
-
-.glass h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.glass p, .glass li {
-  line-height: 1.7;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+/* === HERO VIDEO (Optional) === */
+.hero video {
+  max-width: 100%;
   margin-top: 20px;
-}
-
-.item {
-  background: rgba(255, 255, 255, 0.04);
-  padding: 20px;
-  border: 1px solid #0ff3;
+  border: 2px solid #0ff4;
   border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.item:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 0 20px #0ff5;
+/* === CONTACT FORM (Optional) === */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-/* === FOOTER === */
-footer {
-  text-align: center;
-  background: #000;
-  padding: 20px;
-  border-top: 1px solid #0ff3;
-  color: #aaa;
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #0ff3;
+  background: rgba(255, 255, 255, 0.05);
+  color: #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  background: #0ff;
+  color: #000;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #0cc;
 }
