@@ -1,57 +1,102 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nithishkumar S - Cybersecurity Portfolio</title>
+  <title>Nithishkumar S | Premium Cybersecurity Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <header class="section">
+  <header>
+    <div class="container">
       <h1>Nithishkumar S</h1>
-      <p class="tagline">Cybersecurity Enthusiast | Beginner Ethical Hacker</p>
-      <p class="bio">Passionate about ethical hacking, scripting, and real-world cybersecurity projects. Exploring Kali Linux, network attacks, and system vulnerabilities.</p>
-    </header>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <section class="section">
-      <h2>Cybersecurity Projects</h2>
-      <ul>
-        <li><strong>WiFi Password Cracking</strong> – Used Aircrack-ng and external wireless adapter on Kali Linux to crack WPA2 WiFi using dictionary attack.</li>
-        <li><strong>Phishing Page Creation</strong> – Built a clone login page using SocialFish to simulate real-time credential harvesting (educational use only).</li>
-        <li><strong>Password Brute-force Tool</strong> – Developed a script-based password attacker using Python and rockyou.txt to test weak credentials.</li>
-        <li><strong>Nmap Port Scanner</strong> – Scanned target IPs for open ports and service fingerprints using aggressive and stealth scan modes.</li>
-      </ul>
-    </section>
+  <section id="home" class="hero">
+    <h2>Hello, I'm <span>Nithishkumar S</span></h2>
+    <p>Cybersecurity Enthusiast | Ethical Hacker | Linux Specialist</p>
+  </section>
 
-    <section class="section">
-      <h2>Tools & Skills</h2>
-      <ul>
-        <li>Kali Linux (Main OS)</li>
-        <li>Nmap – Network scanning and enumeration</li>
-        <li>Wireshark – Packet analysis</li>
-        <li>Linux Terminal – Command-line operations and scripting</li>
-        <li>Basic Scripting – Python, Shell</li>
-        <li>GitHub – Version control and project hosting</li>
-      </ul>
-    </section>
+  <section id="about" class="glass">
+    <h2>About Me</h2>
+    <p>I am a passionate cybersecurity student with practical experience in ethical hacking, WiFi cracking, brute force, phishing page creation, and network scanning. I thrive on securing systems and sharing knowledge.</p>
+  </section>
 
-    <section class="section">
-      <h2>Certifications</h2>
-      <ul>
-        <li>Cybersecurity Essentials – [Provider name]</li>
-        <li>Ethical Hacking Fundamentals – [Provider name]</li>
-      </ul>
-    </section>
+  <section id="skills" class="glass">
+    <h2>Skills & Tools</h2>
+    <div class="grid">
+      <div class="item">Kali Linux</div>
+      <div class="item">Nmap</div>
+      <div class="item">Wireshark</div>
+      <div class="item">Linux Terminal</div>
+      <div class="item">Python Scripting</div>
+      <div class="item">GitHub</div>
+    </div>
+  </section>
 
-    <section class="section">
-      <h2>Connect With Me</h2>
-      <ul>
-        <li>GitHub: <a href="https://github.com/nithish687894" target="_blank">nithish687894</a></li>
-        <li>Email: <a href="mailto:nithish687894@gmail.com">nithish687894@gmail.com</a></li>
-      </ul>
-    </section>
-  </div>
+  <section id="projects" class="glass">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="item">
+        <h3>WiFi Cracking Simulation</h3>
+        <p>Simulate WiFi vulnerabilities and patch them responsibly.</p>
+      </div>
+      <div class="item">
+        <h3>Password Brute Force Tool</h3>
+        <p>Custom brute force script to test password strengths.</p>
+      </div>
+      <div class="item">
+        <h3>Phishing Page Demo</h3>
+        <p>Ethical phishing simulation for security awareness.</p>
+      </div>
+      <div class="item">
+        <h3>Automated Nmap Scans</h3>
+        <p>Scripts to automate open port scans and vulnerability checks.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications" class="glass">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Certified Ethical Hacker (CEH)</li>
+      <li>Network Penetration Tester</li>
+    </ul>
+  </section>
+
+  <section id="blog" class="glass">
+    <h2>Blog</h2>
+    <div class="grid">
+      <div class="item">
+        <h3>Building My Kali Lab</h3>
+        <p>Step-by-step guide for setting up a secure ethical hacking lab.</p>
+      </div>
+      <div class="item">
+        <h3>Top Nmap Commands</h3>
+        <p>Essential Nmap tricks to boost your scanning efficiency.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="glass">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:nithish687894@gmail.com">nithish687894@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/nithish687894" target="_blank">github.com/nithish687894</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nithishkumar S | All rights reserved</p>
+  </footer>
 </body>
 </html>
