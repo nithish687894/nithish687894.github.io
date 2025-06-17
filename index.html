@@ -3,13 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nithishkumar S | Cybersecurity Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+  <title>Nithishkumar S | Premium Cybersecurity Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="https://raw.githubusercontent.com/nithish687894/nithish687894.github.io/main/icon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
-
   <header>
     <div class="container">
       <h1>Nithishkumar S</h1>
@@ -19,6 +17,7 @@
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#certifications">Certifications</a>
+        <a href="#blog">Blog</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -26,44 +25,89 @@
 
   <section id="home" class="hero">
     <h2>Hello, I'm <span>Nithishkumar S</span></h2>
-    <p id="typing"></p>
+    <p>Cybersecurity Enthusiast | Ethical Hacker | Linux Specialist</p>
   </section>
 
   <section id="about" class="glass">
     <h2>About Me</h2>
-    <p>Passionate about cybersecurity, I specialize in ethical hacking simulations, WiFi cracking demos, brute force scripting, phishing awareness, and network security testing. I focus on real-world security with responsibility.</p>
+    <p>I am a passionate cybersecurity student with practical experience in ethical hacking, WiFi cracking, brute force, phishing page creation, and network scanning. I thrive on securing systems and sharing knowledge.</p>
   </section>
 
   <section id="skills" class="glass">
     <h2>Skills & Tools</h2>
-    <div class="grid">
-      <div class="item">Kali Linux</div>
-      <div class="item">Nmap</div>
-      <div class="item">Wireshark</div>
-      <div class="item">Linux Terminal</div>
-      <div class="item">Python Scripting</div>
-      <div class="item">Git & GitHub</div>
-    </div>
+
+    <details open>
+      <summary>🧠 General Tools</summary>
+      <div class="grid">
+        <div class="item">Kali Linux</div>
+        <div class="item">Nmap</div>
+        <div class="item">Wireshark</div>
+        <div class="item">Linux Terminal</div>
+        <div class="item">Python Scripting</div>
+        <div class="item">GitHub</div>
+        <div class="item">Bash Scripting</div>
+      </div>
+    </details>
+
+    <details>
+      <summary>🕵️ Recon & Scanning</summary>
+      <div class="grid">
+        <div class="item">Nmap</div>
+        <div class="item">WhatWeb</div>
+        <div class="item">Shodan</div>
+        <div class="item">theHarvester</div>
+        <div class="item">SpiderFoot</div>
+      </div>
+    </details>
+
+    <details>
+      <summary>🔍 Vulnerability Scanners</summary>
+      <div class="grid">
+        <div class="item">Nikto</div>
+        <div class="item">SearchSploit</div>
+        <div class="item">OpenVAS</div>
+        <div class="item">Nessus</div>
+      </div>
+    </details>
+
+    <details>
+      <summary>⚔️ Exploitation Tools</summary>
+      <div class="grid">
+        <div class="item">Metasploit</div>
+        <div class="item">msfvenom</div>
+        <div class="item">Armitage</div>
+      </div>
+    </details>
+
+    <details>
+      <summary>📶 Wi-Fi Testing Tools</summary>
+      <div class="grid">
+        <div class="item">aircrack-ng</div>
+        <div class="item">airodump-ng</div>
+        <div class="item">Wifite</div>
+        <div class="item">bettercap</div>
+      </div>
+    </details>
   </section>
 
   <section id="projects" class="glass">
     <h2>Projects</h2>
     <div class="grid">
       <div class="item">
-        <h3>WiFi Cracking Simulation</h3>
-        <p>Demonstrates WiFi security flaws and patching strategies responsibly.</p>
+        <h3>Wireless Security Testing</h3>
+        <p>Simulate WiFi vulnerabilities and patch them responsibly.</p>
       </div>
       <div class="item">
-        <h3>Password Brute Force Tool</h3>
-        <p>Custom Python script to test password strength and resilience.</p>
+        <h3>Password Brute Force Tool(ethical)</h3>
+        <p>Custom brute force script to test password strengths.</p>
       </div>
       <div class="item">
         <h3>Phishing Page Demo</h3>
-        <p>Educational phishing simulation to improve user awareness.</p>
+        <p>Ethical phishing simulation for security awareness.</p>
       </div>
       <div class="item">
         <h3>Automated Nmap Scans</h3>
-        <p>Scripts for automated port scanning and basic vulnerability checks.</p>
+        <p>Scripts to automate open port scans and vulnerability checks.</p>
       </div>
     </div>
   </section>
@@ -71,9 +115,23 @@
   <section id="certifications" class="glass">
     <h2>Certifications</h2>
     <ul>
-      <li>Certified Ethical Hacker (CEH)</li>
-      <li>Network Penetration Tester</li>
+      <li>Introduction to Cybersecurity</li>
+      <li>Ethical Hacking (Cisco Networking Academy)</li>
     </ul>
+  </section>
+
+  <section id="blog" class="glass">
+    <h2>Blog</h2>
+    <div class="grid">
+      <div class="item">
+        <h3>Building My Kali Lab</h3>
+        <p>Step-by-step guide for setting up a secure ethical hacking lab.</p>
+      </div>
+      <div class="item">
+        <h3>Top Nmap Commands</h3>
+        <p>Essential Nmap tricks to boost your scanning efficiency.</p>
+      </div>
+    </div>
   </section>
 
   <section id="contact" class="glass">
@@ -85,50 +143,5 @@
   <footer>
     <p>&copy; 2025 Nithishkumar S | All rights reserved</p>
   </footer>
-
-  <!-- Typing Effect Script -->
-  <script>
-    const words = ["Cybersecurity Enthusiast", "Ethical Hacker", "Linux Specialist"];
-    let wordIndex = 0, charIndex = 0;
-    const typingElement = document.getElementById("typing");
-
-    function type() {
-      if (charIndex < words[wordIndex].length) {
-        typingElement.textContent += words[wordIndex].charAt(charIndex);
-        charIndex++;
-        setTimeout(type, 80);
-      } else {
-        setTimeout(() => {
-          typingElement.textContent = "";
-          charIndex = 0;
-          wordIndex = (wordIndex + 1) % words.length;
-          type();
-        }, 1200);
-      }
-    }
-    type();
-  </script>
-
-  <!-- Fade-in on scroll -->
-  <script>
-    const sections = document.querySelectorAll("section");
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.opacity = 1;
-          entry.target.style.transform = "translateY(0)";
-        }
-      });
-    }, { threshold: 0.2 });
-
-    sections.forEach(section => {
-      section.style.opacity = 0;
-      section.style.transform = "translateY(50px)";
-      section.style.transition = "all 0.6s ease-out";
-      observer.observe(section);
-    });
-  </script>
-
 </body>
 </html>
-
