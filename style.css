@@ -1,1 +1,149 @@
+/* Fonts & Base */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+a {
+  color: #00fff7;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00e0d3;
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 999;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00fff7;
+}
+
+/* Hero */
+.hero {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: fadeIn 1.5s ease;
+}
+
+.hero span {
+  color: #00fff7;
+}
+
+#typing {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  color: #00fff7;
+}
+
+/* Section Titles */
+section h2 {
+  text-align: center;
+  color: #00fff7;
+  font-size: 2rem;
+  text-shadow: 0 0 10px #00fff7aa;
+  margin-bottom: 1rem;
+}
+
+/* Sections */
+section {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.grid .item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.grid .item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 255, 247, 0.4);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav a {
+    margin: 0 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 1.5rem; }
+  .hero h2 { font-size: 1.3rem; }
+  .hero p, #typing { font-size: 1rem; }
+}
 
