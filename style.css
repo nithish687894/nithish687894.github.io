@@ -1,134 +1,125 @@
-/* Import Google Fonts is in HTML */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Fonts & Base */
 body {
+  margin: 0;
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
   color: #fff;
-  line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+a {
+  color: #00fff7;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00e0d3;
+}
+
+/* Header */
 header {
   position: sticky;
   top: 0;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-  padding: 1rem 0;
-  z-index: 1000;
-}
-
-header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 1rem 2rem;
+  z-index: 999;
 }
 
-header h1 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 1.8rem;
-}
-
-header nav a {
-  color: #fff;
-  margin-left: 20px;
-  text-decoration: none;
+nav a {
+  margin-left: 1.5rem;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: color 0.3s;
 }
 
-header nav a:hover {
-  color: #00ffe0;
+nav a:hover {
+  color: #00fff7;
 }
 
+/* Hero */
 .hero {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 100px 20px 80px;
+  animation: fadeIn 1.5s ease;
 }
 
 .hero span {
-  color: #00ffe0;
+  color: #00fff7;
 }
 
+/* Sections */
 section {
-  padding: 60px 20px;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 2rem auto;
+  padding: 2rem;
 }
 
 .glass {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
   border-radius: 15px;
-  padding: 40px;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  margin-bottom: 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 1s ease forwards;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
-.item {
-  background: rgba(255, 255, 255, 0.08);
-  padding: 20px;
+.grid .item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
   border-radius: 10px;
-  transition: transform 0.3s ease, background 0.3s ease;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.item:hover {
+.grid .item:hover {
   transform: translateY(-5px);
-  background: rgba(0, 255, 224, 0.1);
+  box-shadow: 0 6px 20px rgba(0, 255, 247, 0.4);
 }
 
+/* Footer */
 footer {
   text-align: center;
-  padding: 30px 20px;
-  background: rgba(0,0,0,0.6);
-  backdrop-filter: blur(10px);
+  padding: 1rem;
+  opacity: 0.7;
+  font-size: 0.9rem;
 }
 
-a {
-  color: #00ffe0;
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
-
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s forwards;
-}
-
-.fade-in:nth-of-type(2) { animation-delay: 0.2s; }
-.fade-in:nth-of-type(3) { animation-delay: 0.4s; }
-.fade-in:nth-of-type(4) { animation-delay: 0.6s; }
-.fade-in:nth-of-type(5) { animation-delay: 0.8s; }
-.fade-in:nth-of-type(6) { animation-delay: 1s; }
-.fade-in:nth-of-type(7) { animation-delay: 1.2s; }
 
 @keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
+/* Responsive tweaks */
 @media (max-width: 768px) {
-  header .container {
-    flex-direction: column;
-  }
-  header nav a {
-    margin: 10px 10px;
+  nav a {
+    margin: 0 0.5rem;
   }
 }
-
