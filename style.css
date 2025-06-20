@@ -156,3 +156,65 @@ details summary::-webkit-details-marker {
   display: none;
 }
 
+/* === Updated Tool Card Styling === */
+.item {
+  position: relative;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 20px;
+  border: 1px solid #0ff3;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  font-weight: bold;
+  color: #0ff;
+  text-decoration: none;
+  display: block;
+}
+
+.item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffffaa;
+  background: rgba(0, 255, 255, 0.1);
+}
+
+/* Tooltip style */
+.item .tooltip {
+  position: absolute;
+  bottom: -90%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px;
+  background: #10121b;
+  color: white;
+  padding: 0.7rem;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  box-shadow: 0 0 15px #00ffff88;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s ease;
+  z-index: 100;
+}
+
+.item:hover .tooltip {
+  opacity: 1;
+}
+
+/* Fade effect */
+details[open] .grid .item {
+  animation: fadeInUp 0.6s ease both;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
