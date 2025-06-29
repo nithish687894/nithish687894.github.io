@@ -124,7 +124,7 @@
 </section>
 
 
-  <section id="blog" class="glass">
+    <section id="blog" class="glass">
     <h2>Blog</h2>
     <div class="grid">
       <div class="item">
@@ -160,22 +160,24 @@
       });
     });
   </script>
+
+  <script>
+    const sections = document.querySelectorAll("section");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+
 </body>
 </html>
-<script>
-  const sections = document.querySelectorAll("section");
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-      }
-    });
-  }, {
-    threshold: 0.1
-  });
-
-  sections.forEach(section => {
-    observer.observe(section);
-  });
-</script>
