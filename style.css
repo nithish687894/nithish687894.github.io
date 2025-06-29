@@ -6,6 +6,12 @@ body {
   color: #ddd;
   scroll-behavior: smooth;
 }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 
 h1, h2 {
   font-family: 'Orbitron', sans-serif;
@@ -213,3 +219,28 @@ section.visible {
   opacity: 1;
   transform: translateY(0);
 }
+/* === MOBILE RESPONSIVE (for phones) === */
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h2 {
+    font-size: 1.6em;
+  }
+
+  .glass {
+    padding: 30px 15px;
+  }
+
+  .tab {
+    font-size: 0.9em;
+    padding: 8px 12px;
+  }
+}
+
